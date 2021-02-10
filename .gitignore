@@ -5,4 +5,3 @@ venv
 ./#source
 .env
 db.sqlite3
-media
