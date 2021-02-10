@@ -40,6 +40,7 @@ INSTALLED_APPS = [
 
     # third party
     'rest_framework',
+    'drf_yasg',
 
     # custom
     'auth_api',
