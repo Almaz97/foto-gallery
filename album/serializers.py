@@ -12,13 +12,17 @@ class UserSerializer(serializers.ModelSerializer):
 class AlbumSerializer(serializers.ModelSerializer):
     class Meta:
         model = Album
-        fields = ['id', 'user', 'title', 'image', 'views', 'created_at']
+        fields = ['id', 'user', 'title', 'image', 'thumbnail_image', 'views',
+                  'created_at']
 
         extra_kwargs = {
             'user': {
                 'read_only': True
             },
             'views': {
+                'read_only': True
+            },
+            'thumbnail_image': {
                 'read_only': True
             }
         }

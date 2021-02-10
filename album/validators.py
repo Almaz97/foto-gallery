@@ -16,5 +16,5 @@ def validate_image_extension(image):
 def validate_size_limit(image):
     file_size = image.size
     limit = settings.MAX_UPLOAD_SIZE
-    if file_size > limit * 1024:
+    if file_size > limit:
         raise ValidationError(f'Max size of file is {limit} MB')

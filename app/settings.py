@@ -135,5 +135,5 @@ STATIC_URL = '/static/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 MEDIA_URL = '/media/'
 
-# set upload size in MB
-MAX_UPLOAD_SIZE = 5
+# set upload size in bytes. 5242880b= 5mb
+MAX_UPLOAD_SIZE = 5242880
